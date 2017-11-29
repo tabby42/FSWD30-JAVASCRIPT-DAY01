@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var sentence = "With the online map of Vienna you can easily navigate through Vienna.";
+		var index1 = sentence.indexOf("Vienna");
+		//document.write(index1);
+		var first = sentence.substring(index1, index1 + 6);
+		document.write(first + "<br>");
+		var index2 = sentence.lastIndexOf("Vienna");
+		var second = sentence.substring(index2, index2 + 6);
+		document.write(second +  "<br>");
+
+		//11, 25, 17, 27 and 0
+		var array = [ 
+						[1, 2, 1, 24], 
+						[8, 11, 9, 4], 
+						[7, 0, 7, 27], 
+						[7, 4, 28, 14], 
+						[3, 10, 25, 7], 
+						[21, 4, 6, 17], 
+						[3, 5, 26, 3] 
+					];
+
+		document.write(array[1][1] +  "<br>");
+		document.write(array[4][2] +  "<br>");
+		document.write(array[5][3] +  "<br>");
+		document.write(array[2][3] +  "<br>");
+		document.write(array[2][1] +  "<br>");
+
+		// "Vienna is a nice city".
+		var multidimensional = [
+			["Vienna", "hello", "opera", "hat"],
+			["love", "is", "her", "dork"],
+			["free", "three", "a", "tree"],
+			["anno", "moot", "hello", "nice"],
+			["hub", "drain", "she", "well", "city."]
+		];
+
+		document.write(multidimensional[0][0] + " " + multidimensional[1][1] + " " + multidimensional[2][2] + " " 
+			+ multidimensional[3][3] + " " + multidimensional[4][4] +  "<br>");
+
+		var paragraph = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$'properties $flow$down;$actions$flow$up'.";
+		//var splitParagraph = new Array();
+		var splitParagraph = paragraph.split("$");
+		document.write(splitParagraph.join(" ") + "<br>");
+		//var result1 = paragraph.replace(/\$/g, ",");
+		//document.write(result1);
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
